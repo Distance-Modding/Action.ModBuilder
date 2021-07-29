@@ -1,5 +1,8 @@
 name: Build Visual Studio solution
 description: Builds a solution using the Microsoft Build engine
+branding:
+  icon: activity
+  color: blue
 runs:
   using: 'composite'
   steps:
