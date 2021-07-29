@@ -1,4 +1,4 @@
-# Build VIsualStudio solution GitHub Action
+# Build VisualStudio solution GitHub Action
 Composite GitHub action to restore NuGet packages and build a Visual Studio sln file
 
 # Inputs
