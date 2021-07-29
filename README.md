@@ -1,5 +1,5 @@
 # Solution Builder GitHub Action
-Composite action to build a Visual Studio sln file
+Composite action to restore NuGet packages and build a Visual Studio sln file
 
 # Inputs
 > `solution-file` (required string)
