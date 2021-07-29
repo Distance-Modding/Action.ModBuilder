@@ -1,0 +1,15 @@
+name: Build Visual Studio solution
+description: Builds a solution using the Microsoft Build engine
+runs:
+  using: 'composite'
+  steps:
+    - name: DotEnv
+      uses: xom9ikk/dotenv@v1.0.2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+    - name: Restore Solution Packages
+      run: nuget restore $env:SOLUTION
+    - name: Build Solution
+      run: msbuild $env:SOLUTION -m
