@@ -5,6 +5,8 @@ runs:
   steps:
     - name: DotEnv
       uses: xom9ikk/dotenv@v1.0.2
+      with:
+        path: ${{ github.workspace }}
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Setup NuGet
